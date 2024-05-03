@@ -1,0 +1,17 @@
+<h1>Add New Product </h1>
+<div class="edit-product">
+
+      <label>Title</label>
+      <input type="text" class="form-control" [(ngModel)]="productData.title">
+
+      <label>Price</label>
+      <input type="number" class="form-control" [(ngModel)]="productData.price">
+ 
+      <label>Description</label>
+      <textarea class="form-control" [(ngModel)]="productData.description"></textarea>
+   <br>
+    <button type="button" class="btn btn-primary" (click)="updateProduct()">Save changes</button>
+
+  </div>
+
+  

@@ -1,0 +1,13 @@
+.intro {
+    height: 50vh;
+  }
+
+
+ .heading h1{
+    /* height: 40px;
+    width: 70px; */
+    text-align: center;
+    /* justify-content: center; */
+    background-color: lightblue;
+    padding: 10px;
+ } 

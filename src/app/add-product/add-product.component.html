@@ -1,0 +1,31 @@
+
+<style>
+    /* Hide the up and down arrows in number input */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  
+    input[type=number] {
+      -moz-appearance: textfield; /* Firefox */
+    }
+  </style>
+<div class="add-product">
+    <h1>Add New Product </h1>
+    <!-- <p class="p_message">{{addProductMessage}}</p> -->
+    <form #addProduct="ngForm" (ngSubmit)="onSubmit(addProduct.value)" class="common-form">
+    <input class="form-input" type="text" ngModel name="title" placeholder="Enter product name" required>
+    <input class="form-input" type="number" inputmode="numeric" ngModel name="price" pattern="[0-9]+"  placeholder="Enter product price" title="Please enter numbers only" required>
+    <input class="form-input" type="text" ngModel name="description" placeholder="Enetr product description" required>
+ 
+    <select class="form-select" ngModel name="published" required>
+        <option value="">Select published status</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+    <button class="form-button">Add Product</button>
+    </form>
+</div>
+
+  
